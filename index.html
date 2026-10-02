@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPLITzyy — split expenses</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <h1>SPLITzyy</h1>
+  </header>
+
+  <main class="wrap">
+
+    <section class="card">
+      <h2>1. Add people</h2>
+
+      <label for="nameInput">Name</label>
+      <input type="text" id="nameInput" placeholder="e.g. akshita">
+
+      <label for="upiInput">UPI ID (optional)</label>
+      <input type="text" id="upiInput" placeholder="e.g. akshita@okhdfcbank">
+
+      <button id="addPersonBtn">Add person</button>
+      <p id="personError" class="error"></p>
+
+      <h3>People in this group</h3>
+      <ul id="peopleList"></ul>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: Add an expense
+         Enter what was bought, how much it cost,
+         who paid, and who should share the cost.
+    ============================================ -->
+    <section class="card">
+      <h2>2. Add an expense</h2>
+
+      <label for="descInput">What was it for?</label>
+      <input type="text" id="descInput" placeholder="e.g. Dinner">
+
+      <label for="amountInput">Amount (₹)</label>
+      <input type="number" id="amountInput" placeholder="e.g. 500" min="0" step="1">
+
+      <label for="paidBySelect">Who paid?</label>
+      <select id="paidBySelect"></select>
+
+      <p>Split between:</p>
+      <div id="splitCheckboxes"></div>
+
+      <button id="addExpenseBtn">Add expense</button>
+
+      <p id="expenseError" class="error"></p>
+
+      <h3>Expense history</h3>
+      <ul id="expenseList"></ul>
+    </section>
+
+    <section class="card">
+      <h2> 3. Settle up :) </h2>
+      <p id="settleIntro">Add people and expenses to see who owes what.</p>
+      <div id="settleList"></div>
+    </section>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

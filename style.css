@@ -1,0 +1,159 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #edd7e4;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.top {
+  background: #d83081;   
+  color: white;
+  padding: 16px 20px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.wrap {
+  max-width: 600px;  
+  margin: 0 auto;      
+  padding: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+label {
+  display: block;         
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #d83081;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #df0770;   
+}
+
+.error {
+  color: #c0392b;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 18px;  
+}
+
+ul {
+  list-style: none;   
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #f7f8fa;
+  border: 1px solid #e4e6ea;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+}
+
+li .remove-btn {
+  margin-top: 0;         
+  background: transparent;
+  color: #c0392b;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+li .remove-btn:hover {
+  background: #fbeaea;
+}
+
+.split-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.split-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.settle-card {
+  border: 1px solid #e4e6ea;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #f7f8fa;
+}
+
+.settle-card .amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #b91a69;
+  margin: 6px 0;
+}
+
+.settle-card .upi-id {
+  font-size: 14px;
+  color: #a01857;
+}
+
+.qr-box {
+  margin: 10px 0;
+  display: inline-block;
+  background: white;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.settle-card .mark-paid-btn {
+  background: transparent;
+  color: #555;
+  border: 1px solid #ccc;
+}
